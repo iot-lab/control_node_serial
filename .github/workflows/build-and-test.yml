@@ -15,9 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - name: Build Docker image
+      run: docker build -t control-node-serial .
     - name: Build and test
       run: |
-        docker build -t control-node-serial .
         docker run --rm                             \
           -v $(pwd):/shared                         \
           control-node-serial                       \
