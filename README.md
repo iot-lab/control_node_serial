@@ -2,10 +2,12 @@ Control node serial interface
 =============================
 
 
-Send and receive messages to the control node.
+Send and receive messages to the control node. Should be used with the code
+from the [iot-lab-gateway](https://github.com/iot-lab/iot-lab-gateway)
+repository.
 Receive measures packets and errors messages from the control node.
 
-Interraction are done through stdin and stdout.
+Interactions are done through stdin and stdout.
 
 
 Measures handling
