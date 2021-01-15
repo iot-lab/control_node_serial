@@ -1,0 +1,23 @@
+name: build-and-test
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Build and test
+      run: |
+        docker run --rm                             \
+          -v $(pwd):/shared                         \
+          fitiotlab/iot-lab-gateway-tests:latest    \
+          make all test coverage
