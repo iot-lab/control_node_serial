@@ -17,7 +17,8 @@ jobs:
     - uses: actions/checkout@master
     - name: Build and test
       run: |
+        docker build -t control-node-serial .
         docker run --rm                             \
           -v $(pwd):/shared                         \
-          fitiotlab/control-node-serial:latest    \
+          control-node-serial                       \
           make realclean coverage
