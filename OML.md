@@ -3,10 +3,7 @@ OML release
 
 
 Install OML version 2.10 from source:
-
-https://oml.mytestbed.net/projects/oml/wiki/BuildingSource
-
-http://oml.mytestbed.net/attachments/download/940/oml2-2.10.1.tar.gz
+https://www.iot-lab.info/yocto-images/oml2/oml2-2.11.0.tar.gz
 
 
 Debian Install build requirements
