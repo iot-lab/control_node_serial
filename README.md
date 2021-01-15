@@ -20,5 +20,9 @@ Handles packets decoding.
 Compiling
 =========
 
-Install 'oml' as described in 'OML.md'
+Install 'oml' as described in [OML.md](OML.md)
 
+Testing
+=======
+
+Run `make test coverage`
