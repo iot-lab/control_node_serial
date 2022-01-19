@@ -96,7 +96,7 @@ static int create_server_socket()
         goto cleanup;
     }
 
-    if (-1 == listen(s_fd, 0)) {
+    if (-1 == listen(s_fd, SOMAXCONN)) {
         PRINT_ERROR("error listen failed\n");
         goto cleanup;
     }
